@@ -38,10 +38,10 @@ class SlippyFileNameGenerator implements FileNameGenerator {
 		String protocol = uri.getScheme();
 		Set<String> args = uri.getQueryParameterNames();
 		String tag = uri.getQueryParameter("tag");
-		String x = uri.getQueryParameter("x");
-		String y = uri.getQueryParameter("y");
-		String z = uri.getQueryParameter("z");
-		String imgfilename=tag+"/" + z +"/" + x +"/" + y +".png";
+		String x = uri.getQueryParameter("a");
+		String y = uri.getQueryParameter("b");
+		String z = uri.getQueryParameter("c");
+		String imgfilename=tag+"_" + z +"_" + x +"_" + y +".png";
         Log.i("SlippyFileNameGenerator",imgfilename);
 		return imgfilename;
 	}
